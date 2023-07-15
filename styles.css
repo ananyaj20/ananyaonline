@@ -321,6 +321,15 @@ nav{
     top: 150px;
 }
 
+@media screen and (max-width: 767px) {
+    .gotg-text-1{
+    height: 130px;
+    z-index: 1;
+    top: 250px;
+    position: absolute;
+    left: 19%;} 
+    }
+
 .tarot-box {
     width: 700px;
     height: auto;
@@ -329,6 +338,16 @@ nav{
     position: relative;
     justify-content: center;
 }
+
+@media screen and (max-width: 450px) {
+    .tarot-box{
+    width: 600px;
+    height: auto;
+    z-index: 2;
+    top: 300px;
+    position: relative;
+    left: 19%;} 
+    }
 
 /* @media screen and (min-width: 280px) and (max-width: 319px) {
     .tarot-box{
@@ -430,6 +449,15 @@ nav{
     position: relative;
     align-content: center;
 }
+
+@media screen and (max-width: 450px) {
+    .tarot-spread{
+    width: 650px;
+    z-index: 1;
+    top: 300px;
+    position: relative;
+    left: 19%;} 
+    }
 
 /* @media screen and (min-width: 280px) and (max-width: 319px) {
     .tarot-spread{
