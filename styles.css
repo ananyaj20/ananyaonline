@@ -321,7 +321,7 @@ nav{
     top: 150px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 450px) {
     .gotg-text-1{
     height: 130px;
     z-index: 1;
