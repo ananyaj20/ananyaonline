@@ -266,3 +266,85 @@ a {
 a:hover {
     color: greenyellow;
 }
+
+.contact-me {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+form {
+    width: 80%;
+    align-content: center;
+}
+
+.name {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'VT323'
+}
+
+.email {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'VT323'
+}
+
+.country {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'VT323'
+}
+
+.message {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'VT323'
+}
+
+.button {
+    font-size: 30px;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.201);
+    background-image: linear-gradient(to top left,
+     rgb(68, 255, 130), 
+     rgb(177, 211, 245));
+     box-shadow: inset 2px 3px 5px rgb(180, 241, 162),
+     inset -2px -2px rgba(0, 0, 0, 0.6);
+     border-radius: 10px;
+     font-family: 'VT323'
+}
+
+.button:hover {
+    background-image: radial-gradient(rgb(255, 0, 162), black);
+}
+
+.button:active {
+    box-shadow: inset -2px 2px 3px rgba(212, 28, 114, 0.709);
+}
+
+.ig {
+    font-size: 30px;
+    text-align: center;
+}
