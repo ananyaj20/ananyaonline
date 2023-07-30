@@ -1,7 +1,12 @@
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     background-color: rgba(247, 163, 250, 0.87);
     background-image: radial-gradient(circle, rgba(242, 252, 134, 0.71), rgba(220, 250, 146, 0.69) 34%, rgba(255, 168, 238, 0.84) 65%, rgb(249, 177, 252, .87));
-    height: 100%;
+    height: 100vh;
+    height: -webkit-fill-available;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,16 +68,17 @@ nav{
 
 .butterfly-1 {
 
-    width: 250px;
+    width: 170px;
     position: fixed;
     transform: rotate(335deg);
     bottom: 60px;
     right: 30px;
+    z-index: -1;
 }
 
 .butterfly-2 {
 
-    width: 270px;
+    width: 200px;
     position: fixed;
     transform: rotate(345deg);
     bottom: 20px;
@@ -81,7 +87,7 @@ nav{
 
 .butterfly-3 {
 
-    width: 350px;
+    width: 250px;
     position: fixed;
     transform: rotate(30deg);
     top: 65px;
@@ -90,16 +96,16 @@ nav{
 
 .butterfly-4 {
 
-    width: 235px;
+    width: 140px;
     position: fixed;
     transform: rotate(350deg);
-    top: 170px ;
-    left: 120px;
+    top: 150px ;
+    left: 100px;
 }
 
 .butterfly-5 {
 
-    width: 150px;
+    width: 130px;
     position: fixed;
     transform: rotate(340deg);
     top: 120px ;
@@ -108,13 +114,44 @@ nav{
 
 .butterfly-6 {
 
-    width: 200px;
+    width: 150px;
     position: fixed;
     transform: rotate(25deg);
-    bottom: 175px;
+    bottom: 150px;
     right: 15px;
 }
 
+
+.container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+    /* flex-direction: column; */
+    z-index: 1;
+}
+
+.me {
+    width: 600px;
+}
+
+.tarot-box {
+    width: 650px;
+
+}
+
+.tarot-spread {
+    width: 700px;
+}
+
+@media screen and (max-width: 860px) {
+    .container {
+        margin-top: 200px;
+    }
+    
+}
+/* 
 .gotg-text-1 {
 
     justify-content: center;
@@ -256,7 +293,7 @@ nav{
     z-index: 1;
     top: 350px;
     position: relative;} 
-    }
+    } */
 
 a {
     text-decoration: none;
@@ -266,6 +303,8 @@ a {
 a:hover {
     color: greenyellow;
 }
+
+_____________________________________________________________________________________
 
 .about-me {
     font-size: 40px;
@@ -292,7 +331,7 @@ a:hover {
     padding: 10px;
 }
 
-.me {
+.me1 {
     width: 320px;
 }
 
@@ -311,13 +350,15 @@ a:hover {
     line-height: 1.5;
 }
 
+_____________________________________________________________________________________
+
 .contact-me {
     font-size: 40px;
     width: 100%;
     text-align: center;
 }
 
-.container {
+.container2 {
     width: 100%;
     height: 40%;
     padding: 10px;
