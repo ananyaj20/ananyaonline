@@ -128,12 +128,12 @@ nav{
     display: grid;
     place-items: center;
     margin-top: 100px;
-    /* flex-direction: column; */
     z-index: 1;
 }
 
 .me {
     width: 600px;
+    margin-bottom: -40px;
 }
 
 .tarot-box {
