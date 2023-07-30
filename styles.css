@@ -280,6 +280,7 @@ form {
 
 .button:hover {
     background-image: radial-gradient(rgb(255, 0, 162), black);
+    cursor: pointer;
 }
 
 .button:active {
