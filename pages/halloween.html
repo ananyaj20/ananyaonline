@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover">
+   <title>spooooky</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body> 
+    <div class="hallintro">
+    <h1 class="hallo">Halloween 🕸</h1>
+    <p class="ween">A combination of some of my favourite things - horror movies, looks, set design and generally speaking the art of committing to the bit. Images on the left are my recreations of stills from the listed movies that are on the right.</p>
+    </div>
+
+    <div class="img-slider">
+      <div class="slide active">
+        <img src="../images/hallow1.png" alt="The Love Witch Halloween Costume">
+        <div class="info">
+          <h2>The Love Witch (2016)</h2>
+          <p>dir. by Anna Biller. GOTG Tarot Deck used as a prop.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow2.png" alt="Touch of Evil Halloween Costume">
+        <div class="info">
+          <h2>Touch of Evil (1958)</h2>
+          <p>dir. by Orson Welles. GOTG Tarot Deck used as a prop.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow3.png" alt="Cléo de 5 a 7/Cléo from 5 to 7 Halloween Costume">
+        <div class="info">
+          <h2>Cléo de 5 a 7/Cléo from 5 to 7 (1962)</h2>
+          <p>dir. by Agnès Varda. GOTG Tarot Deck used as a prop.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow4.png" alt="Burn Witch Burn/Night of the Eagle Halloween Costume">
+        <div class="info">
+          <h2>Burn Witch Burn/Night of the Eagle (1962)</h2>
+          <p>dir. by Sidney Hayers. GOTG Tarot Deck used as a prop.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow5.png" alt="Live and Let Die Halloween Costume">
+        <div class="info">
+          <h2>Live and Let Die (1973)</h2>
+          <p>dir. by Guy Hamilton. GOTG Tarot Deck used as a prop.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow6.png" alt="Carrie Halloween Costume">
+        <div class="info">
+          <h2>Carrie (1976)</h2>
+          <p>dir. by Brian de Palma.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow7.png" alt="Ringu Halloween Costume">
+        <div class="info">
+          <h2>Ringu (1998)</h2>
+          <p>dir. by Hideo Nakata.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow8.png" alt="Vertigo Halloween Costume">
+        <div class="info">
+          <h2>Vertigo (1958)</h2>
+          <p>dir. by Alfred Hitchcock.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow9.png" alt="Misery Halloween Costume">
+        <div class="info">
+          <h2>Misery (1990)</h2>
+          <p>dir. by Rob Reiner.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/hallow10.png" alt="Unfriended Halloween Costume">
+        <div class="info">
+          <h2>Unfriended (2015)</h2>
+          <p>dir. by Levan Gabriadze.</p>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+      var btns = document.querySelectorAll('.btn')
+      let currentSlide = 1;
+
+      // Javascript for image slider manual navigation
+      var manualNav = function (manual){
+        slides.forEach((slide) => {
+          slide.classList.remove('active');
+
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+        });
+
+
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+
+      //Javascript for image slider autoplay navigation
+      var repeat = function(activeClass){
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+
+
+        var repeater = () => {
+          setTimeout(function(){
+            [...active].forEach((activeSlide) => {
+              activeSlide.classList.remove('active')
+            });
+
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 3500);
+        }
+        repeater();
+      }
+      repeat();
+    </script>
+
+    </div>
+
+  </div>
+
+  </body>
+</html>
