@@ -42,10 +42,12 @@ input {
 
 label{
     display: inline-block;
+    background-color: rgba(245, 64, 176, 0.187);
+    border-radius: 30px;
     font-size: 20px;
     height: 100%;
-    margin: 0 05px;
-    line-height: 50px;
+    margin-bottom: 10px;
+    line-height: 35px;
     cursor: pointer;
     transition: color .5s;
 }
