@@ -328,7 +328,16 @@ form {
 
 .ig {
     font-size: 30px;
+    margin-top: 44px;
+    margin-bottom: -10px;
+    width: 350px;
     text-align: center;
+    line-height: 45px;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top left, rgb(255 205 68 / 84%), rgb(255 168 238 / 84%));
+    box-shadow: inset -2px -5px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    font-family: 'VT323';
 }
 
 /* _____________________________________________________________________________________ */
