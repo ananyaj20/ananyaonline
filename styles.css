@@ -165,6 +165,19 @@ nav{
     font-family: 'VT323';
 }
 
+.vogue {
+    font-size: 20px;
+    width: 350px;
+    text-align: center;
+    margin-bottom: -20px;
+    line-height: 45px;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top left, rgb(255 205 68 / 84%), rgb(255 168 238 / 84%));
+    box-shadow: inset -2px -5px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    font-family: 'VT323';
+}
+
 .tarot-box {
     width: 650px;
 
